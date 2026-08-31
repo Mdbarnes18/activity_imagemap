@@ -1,0 +1,48 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Image Map</title>
+</head>
+
+<body>
+
+    <h1>Activity Image Map</h1>
+
+    <p>Michael Barnes</p>
+
+    <p>August 31, 2026</p>
+
+    <img src="media/ch03_image-to-map.jpg"
+         alt="Image showing a website, database, and content management system"
+         width="2000"
+         height="2000"
+         usemap="#image-map">
+
+    <map name="image-map">
+
+        <!-- Rectangle mapping: Webpage editor -->
+        <area shape="rect"
+              coords="660,750,920,1110"
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              alt="Learn about HTML">
+
+        <!-- Circle mapping: Content Management System -->
+        <area shape="circle"
+              coords="1530,1494,200"
+              href="https://en.wikipedia.org/wiki/Content_management_system"
+              alt="Learn about Content Management Systems">
+
+        <!-- Polygon mapping: Database -->
+        <area shape="poly"
+              coords="534,216,774,222,964,360,960,492,436,496,436,370,534,328"
+              href="https://www.mysql.com/"
+              alt="Learn about MySQL and databases">
+
+    </map>
+
+</body>
+</html>
+
